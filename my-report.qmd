@@ -15,7 +15,7 @@ library(tidyverse); library(exscidata); library(gt)
 hypertrophy %>%
   select(AGE, HEIGHT, GROUP) %>%
   summarise(.by = GROUP,
-            m.age = mean(AGE),
+            ALDEEER = mean(AGE),
             m.height = mean(HEIGHT)) %>%
   gt()
 
